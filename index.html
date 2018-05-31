@@ -5,13 +5,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>HTML/CSS/JS Boilerplate</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
 	<link rel="stylesheet" href="./public/styles/style.css">
 </head>
 <body>
+	<div class="wrapper">
 
-	<h1>HTML/CSS/JS Boilerplate</h1>
-	<p>Let's code!</p>
+		<nav>
+			<ul>
+				<li>Community Garden</li>
+				<li>My Plot</li>
+			</ul>
+		</nav>
 
+		<form action="" id="plantForm">
+			<input type="text" placeholder="New Plant" id="plant">
+			<button type="submit">Enter</button>
+		</form>
+		
+		<div id="container1">
+			<!-- <div class="resizeDiv"></div> -->
+		</div>
+		<br />
+		<div id="container2">
+		</div>
+
+		<button id="save">Save Plot</button>
+		<button id="reset">Reset</button>
+		<button id="add">Add to Community Garden</button>
+
+
+	</div>
+	
+	
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+	<!-- <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="dev/scripts/canvas2image.js"></script>
+	<script src="dev/scripts/html2canvas.js"></script>
 	<script src="public/scripts/main.js"></script>
 </body>
 </html>

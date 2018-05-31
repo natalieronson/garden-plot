@@ -33,11 +33,11 @@ let num = 0;
             // $("#container1").append(`<div class="resizeDiv"></div>`)
             $("#container1").append(`
             <div class="resizeDiv">
-                <img class="veg-image" id='veg${num}' src="${image}" crossorigin>
+                <img class="veg-image" id='veg${num}' crossOrigin='anonymous'>
             </div>`);
-            // $(`#veg${num}`).attr("src", image)
+            $(`#veg${num}`).attr("src", image)
 
-            // num = num + 1;
+            num = num + 1;
             // $("#container1").append(`<div class="resizeDiv"><img class="veg-image" src="${image}" crossOrigin='anonymous'></div>`);
 
             // drag and drop 

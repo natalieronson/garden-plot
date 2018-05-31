@@ -33,7 +33,7 @@ let num = 0;
             // $("#container1").append(`<div class="resizeDiv"></div>`)
             $("#container1").append(`
             <div class="resizeDiv">
-                <img class="veg-image" id='veg${num}' src="${image}">
+                <img class="veg-image" id='veg${num}' src="${image}" crossorigin>
             </div>`);
             // $(`#veg${num}`).attr("src", image)
 

@@ -79,7 +79,7 @@ let num = 0;
     //save to computer
 
     $("#save").on("click", function () {
-        html2canvas(document.getElementById('container2'), { letterRendering: 1, allowTaint: true })
+        html2canvas(document.getElementById('container2'), { letterRendering: 1 })
             .then(canvas => {
                 document.body.appendChild(canvas)
                 Canvas2Image.saveAsImage(canvas, 100, 100, "png")

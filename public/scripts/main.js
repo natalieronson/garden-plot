@@ -63,7 +63,7 @@ $(document).ready(function () {
     //save to computer
 
     $("#save").on("click", function () {
-        html2canvas(document.getElementById('container2'), { letterRendering: 1, allowTaint: true }).then(function (canvas) {
+        html2canvas(document.getElementById('container2'), { letterRendering: 1 }).then(function (canvas) {
             document.body.appendChild(canvas);
             Canvas2Image.saveAsImage(canvas, 100, 100, "png");
             // let dataURL = canvas.toDataURL();

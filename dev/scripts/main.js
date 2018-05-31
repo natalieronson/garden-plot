@@ -87,7 +87,7 @@ let num = 0;
         //         console.log(dataURL);
         //     });
 
-
+        console.log("saving image");
         GrabzIt("M2RhN2UwZjBlYjRlNDNlY2EwMzRhMWEyZTcwNjdiYzk=").ConvertURL("https://natalieronson.github.io/garden-plot/",
             { "target": "#container2", "bheight": -1, "height": -1, "width": -1 }).Create();
     })

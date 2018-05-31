@@ -26,10 +26,10 @@ $(document).ready(function () {
             console.log(response);
             var image = response.icons[0].preview_url;
             // $("#container1").append(`<div class="resizeDiv"></div>`)
-            $("#container1").append("\n            <div class=\"resizeDiv\">\n                <img class=\"veg-image\" id='veg" + num + "' src=\"" + image + "\">\n            </div>");
-            // $(`#veg${num}`).attr("src", image)
+            $("#container1").append("\n            <div class=\"resizeDiv\" crossorigin='anonymous'>\n                <img class=\"veg-image\" id='veg" + num + "' crossorigin='anonymous'>\n            </div>");
+            $("#veg" + num).attr("src", image);
 
-            // num = num + 1;
+            num = num + 1;
             // $("#container1").append(`<div class="resizeDiv"><img class="veg-image" src="${image}" crossOrigin='anonymous'></div>`);
 
             // drag and drop 

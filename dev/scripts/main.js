@@ -32,7 +32,7 @@ let num = 0;
             let image = response.icons[0].preview_url;
             // $("#container1").append(`<div class="resizeDiv"></div>`)
             $("#container1").append(`
-            <div class="resizeDiv">
+            <div class="resizeDiv" crossorigin='anonymous'>
                 <img class="veg-image" id='veg${num}' crossorigin='anonymous'>
             </div>`);
             $(`#veg${num}`).attr("src", image)
@@ -79,17 +79,14 @@ let num = 0;
     //save to computer
 
     $("#save").on("click", function () {
-        // html2canvas(document.getElementById('container2'), { letterRendering: 1, allowTaint: true })
-        //     .then(canvas => {
-        //         document.body.appendChild(canvas)
-        //         Canvas2Image.saveAsImage(canvas, 100, 100, "png")
-        //         // let dataURL = canvas.toDataURL();
-        //         console.log(dataURL);
-        //     });
+        html2canvas(document.getElementById('container2'), { letterRendering: 1, allowTaint: true })
+            .then(canvas => {
+                document.body.appendChild(canvas)
+                Canvas2Image.saveAsImage(canvas, 100, 100, "png")
+                // let dataURL = canvas.toDataURL();
+                console.log(dataURL);
+            });
 
-        console.log("saving image");
-        GrabzIt("M2RhN2UwZjBlYjRlNDNlY2EwMzRhMWEyZTcwNjdiYzk=").ConvertURL("https://natalieronson.github.io/garden-plot/",
-            { "target": "#container2", "bheight": -1, "height": -1, "width": -1 }).Create();
     })
 
     //reset
